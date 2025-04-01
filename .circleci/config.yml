@@ -1,0 +1,24 @@
+version: 2.1
+
+orbs: 
+  python: circleci/python@2.0.1
+
+jobs:
+  build-and-test:
+    docker:
+      - image: cimg/python:3.10.2
+    steps:
+      - checkout
+      - run:
+          name: Install pytest and run tests
+          command: |
+            pip install pytest
+            pytest --junitxml=test-results/junit.xml test_triangle_classifier.py
+      - store_test_results:
+          path: test-results
+
+workflows:
+  testing_triangles:
+    jobs:
+      - build-and-test
+
