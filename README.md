@@ -1,4 +1,4 @@
-
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/MeiXu2910/hw-06b/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MeiXu2910/hw-06b/tree/main)
 # HW 06b: Testing a Legacy System
 
 ## Repository Overview
